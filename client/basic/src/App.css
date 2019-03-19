@@ -2,6 +2,12 @@
     size: A4;
 }
 
-table {
+@media print {
+    .pdf-hidden {
+        display: none;
+    }
+}
+
+table, th, td {
     border: 1px solid black;
 }

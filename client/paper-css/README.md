@@ -1,3 +1,7 @@
+# paper-css
+
+This can be used with the puppeteer server.
+
 ## Installation
 
 ```

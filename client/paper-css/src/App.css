@@ -2,12 +2,21 @@
     size: A4;
 }
 
+@media print {
+    .pdf-hidden {
+        display: none;
+    }
+}
+
 .sheet {
     overflow: visible;
     height: auto !important;
   }
 
-table {
+table, th, td {
     border: 1px solid black;
+}
+
+table {
     page-break-inside: avoid;
 }
