@@ -24,7 +24,7 @@ class App extends Component {
     return (
       <div className="App">
         <section>
-          {Array(10).fill(
+          {Array(4).fill(
             <article>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse efficitur tincidunt gravida. Mauris euismod luctus orci quis pretium. Sed tempor porttitor justo eget dictum. Donec et erat quis ipsum commodo tempus sit amet vel ex. Nullam dictum luctus
@@ -68,7 +68,7 @@ class App extends Component {
                 <td>First Line 3</td>
                 <td>First Line 4</td>
               </tr>
-              {Array(20).fill(
+              {Array(40).fill(
                 <tr>
                   <td>Line 1</td>
                   <td>Line 2</td>
@@ -85,8 +85,10 @@ class App extends Component {
             </tbody>
           </table>
         </section>
-        <button onClick={this.savePdf}>Save as PDF</button>
-        <a href="http://localhost:5000/pdf">Save as PDF</a>
+        <div className="no-pdf">
+          <button onClick={this.savePdf}>Save as PDF</button>
+          <a href="http://localhost:5000/pdf">Save as PDF</a>
+        </div>
       </div>
     );
   }

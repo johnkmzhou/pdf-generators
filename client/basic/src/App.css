@@ -1,13 +1,29 @@
 @page {
+    margin: 1cm;
     size: A4;
 }
 
 @media print {
-    .pdf-hidden {
+    .no-pdf {
         display: none;
     }
 }
 
 table, th, td {
     border: 1px solid black;
+}
+
+table {
+    page-break-inside: avoid;
+}
+
+body {
+    background: rgb(204,204,204); 
+  }
+
+.App {
+    background: white;
+    margin: 0 auto;
+    padding: 1cm;
+    width: 21cm;
 }

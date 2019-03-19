@@ -3,7 +3,7 @@
 }
 
 @media print {
-    .pdf-hidden {
+    .no-pdf {
         display: none;
     }
 }
