@@ -1,0 +1,13 @@
+@page {
+    size: A4;
+}
+
+.sheet {
+    overflow: visible;
+    height: auto !important;
+  }
+
+table {
+    border: 1px solid black;
+    page-break-inside: avoid;
+}
